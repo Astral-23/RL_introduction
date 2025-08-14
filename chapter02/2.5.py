@@ -87,7 +87,7 @@ if __name__ == '__main__':
     k = 10
     first_value = 0
     step = 10000
-    epsilon = 0.1
+    epsilon = 0.01
     experiment_num = 1000
     update = [
         {'name' : 'ave'},
@@ -95,7 +95,7 @@ if __name__ == '__main__':
     ]
 
     # グラフの設定
-    fig, axes = plt.subplots(nrows=2, ncols=2, figsize=(30, 20)) 
+    fig, axes = plt.subplots(nrows=2, ncols=2, figsize=(15, 10)) 
     for i in range(2):
         for j in range(2):
             update_method = update[j]['name']
