@@ -86,7 +86,7 @@ def bandit_many_times(k : int, first_value : int, step : int, epsilon : float, s
 if __name__ == '__main__':
     k = 10
     first_value = 0
-    step = 10000
+    step = 100000
     epsilon = 0.01
     experiment_num = 1000
     update = [
@@ -95,7 +95,7 @@ if __name__ == '__main__':
     ]
 
     # グラフの設定
-    fig, axes = plt.subplots(nrows=2, ncols=2, figsize=(15, 10)) 
+    fig, axes = plt.subplots(nrows=2, ncols=2, figsize=(15, 20)) 
     for i in range(2):
         for j in range(2):
             update_method = update[j]['name']
