@@ -92,7 +92,7 @@ def jack_rental_car_problem():
                     value[i][j] = sum
                     delta = max(delta, abs(v - value[i][j]))
             print(f"    Policy Evaluation: delta = {delta:.6f}")
-            if delta < 1e-4:
+            if delta < 1e-6:
                 print("Policy Evaluation finished.")
                 break   
             

@@ -153,6 +153,7 @@ if __name__ == '__main__':
     axes[1].set_xlabel("Cars at Location 2")
     axes[1].set_ylabel("Cars at Location 1")
     axes[1].invert_yaxis()
+
     
     plt.tight_layout()
     plt.show()
